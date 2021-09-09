@@ -31,12 +31,10 @@ import Button from "./Button/index";
 const Home = ()=>{
 
     const {state,loading,error,searchTerm,setSearchTerm,setisLoadingMore} = useHomeFetch();
-    // console.log(state);
     if(error){
         return <div>Something Went Wrong</div>
     }
-
-    return <>
+    return <div>
     { !searchTerm && state.results[0] ? <HeroImage
     image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
     title = {state.results[0].original_title}
@@ -75,7 +73,7 @@ const Home = ()=>{
     
     
 
-    </>
+    </div>
 }
 
 

@@ -14,7 +14,7 @@ import { Wrapper, Content, Text } from './MovieInfo.style';
 const MovieInfo = ({ movie }) => {
   
 
-    return<>
+    return<div>
     <Wrapper backdrop={movie.backdrop_path}>
       <Content>
         <Thumb
@@ -44,16 +44,16 @@ const MovieInfo = ({ movie }) => {
         </Text>
       </Content>
     </Wrapper>
-    </>
+    </div>
 
 };
 
 const MovieDirectors =({movie})=>{
-return <>
+return <div>
 {movie.directors.map(director => (
   <p key={director.credit_id}>{director.name}</p>
 ))}
-</>
+</div>
 }
 MovieInfo.propTypes = {
   movie: PropTypes.object

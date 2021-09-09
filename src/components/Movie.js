@@ -26,7 +26,7 @@ const Movie = ()=>{
     if(loading) return <Spinner/>;
     if(error) return <div>oops..! Something Went Wrong</div>;
 
-    return <>
+    return <div>
 
     <BreadCrumb 
     movieTitle = {movie.original_title}/>
@@ -36,7 +36,7 @@ const Movie = ()=>{
          {movie.actors ? <MovieActors movie = {movie} /> : <Spinner/>}
     </Grid>
 
-    </>    
+    </div>    
 
 }
 

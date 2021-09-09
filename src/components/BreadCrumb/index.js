@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const BreadCrumb = ({movieTitle})=>{
     
 
-    return<>
+    return<div>
     <Wrapper>
         <Content>
             <Link to="/">
@@ -18,7 +18,7 @@ const BreadCrumb = ({movieTitle})=>{
     </Wrapper>
 
 
-    </>
+    </div>
 }
 
 BreadCrumb.prototypes= {

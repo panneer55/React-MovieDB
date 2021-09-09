@@ -10,7 +10,7 @@ const Button = ({text,callback})=>(
 
     </Wrapper>
 )
-Button.propTypes = {
+Button.proptypes = {
     text: PropTypes.string,
     callback: PropTypes.func
   };
